@@ -53,6 +53,17 @@ int main(int ac, char **argv)
 		}
 		argv[i] = NULL;
 
+		if (i > 0 && strcmp(argv[0], "exit") == 0)
+		{
+			printf("Shell is exiting...\n");
+			break;
+		}
+
+		for (i = 0; argv[i] != NULL; i++)
+		{
+			free(argv[i]);
+		}
+
 		execution(argv);
 		printf("%s",prompt);
 	}

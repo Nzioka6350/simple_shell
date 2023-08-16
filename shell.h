@@ -11,4 +11,6 @@
 void execution(char **argv);
 char *get_location(char *command);
 
+#define INPUT_LENGTH 100
+int exiting(void);
 #endif 
