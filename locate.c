@@ -1,31 +1,6 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
-#include <unistd.h>
-#include <sys/wait.h>
+#include "shell.h"
 
-#define MAX_TOKENS	100
-#define PATH_MAX_LENGTH	1024
-
-void	execution(char **argv)
-{
-	pid_t	pid = fork();
-
-	if (pid == 0)
-	{
-		if (execvp(argv[0], argv) == -1)
-		{
-			perror("tsh: Command execution failed");
-			exit(EXIT_FAILURE);
-		}
-	}
-	else if (pid < 0)
-		perror("tsh: Fork failed");
-	else
-		wait(NULL);
-}
-
-int	main(void)
+int main(void)
 {
 	char	*prompt = "#cisfun $";
 	char	*lineptr = NULL, *copy_lptr = NULL;

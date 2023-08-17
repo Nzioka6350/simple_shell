@@ -11,10 +11,10 @@
 
 #define MAX_TOKENS 100
 #define PATH_MAX_LENGTH 1024
+#define INPUT_LENGTH 100
 
 void execution(char **argv);
 char *get_location(char *command);
+int exiting(int ac, char **argv);
 
-#define INPUT_LENGTH 100
-int exiting(void);
 #endif 

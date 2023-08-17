@@ -1,14 +1,19 @@
 #include "shell.h"
 
-void execmd(char **argv) {
-	char *command = NULL, *actual_command = NULL;
+void execution(char **argv)
+{
+        pid_t   pid = fork();
 
-	if (argv) {
-		command = argv[0];
-		actual_command = get_location(command);
-
-		if (execve(actual_command, argv, NULL) == -1) {
-			perror("Error:");
-		}
-	}
+        if (pid == 0)
+        {
+                if (execvp(argv[0], argv) == -1)
+                {
+                        perror("tsh: Command execution failed");
+                        exit(EXIT_FAILURE);
+                }
+        }
+        else if (pid < 0)
+                perror("tsh: Fork failed");
+        else
+                wait(NULL);
 }
