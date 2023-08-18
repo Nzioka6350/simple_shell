@@ -16,5 +16,6 @@
 void execution(char **argv);
 char *get_location(char *command);
 int exiting(int ac, char **argv);
-
+int prompting(int ac, char **argv);
+int _larger(void);
 #endif 

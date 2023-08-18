@@ -1,6 +1,6 @@
 #include "shell.h"
 
-int main(void)
+int main(int ac, char **argv)
 {
 	char	*prompt = "#cisfun $";
 	char	*lineptr = NULL, *copy_lptr = NULL;
@@ -10,6 +10,7 @@ int main(void)
 	char	*tokens[MAX_TOKENS];
 	int	total_tokens = 0;
 	int	i;
+	 (void)ac; (void)argv;
 
 	while (1)
 	{

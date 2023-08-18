@@ -1,5 +1,5 @@
 #include "shell.h"
-void execution(char **argv)
+void execute(char **argv)
 {
     pid_t pid = fork();
 
