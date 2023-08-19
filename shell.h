@@ -14,14 +14,17 @@
 #define PATH_MAX_LENGTH 1024
 #define INPUT_LENGTH 100
 
-void execution(char **argv);
 char *get_location(char *command);
 int exiting(int ac, char **argv);
-<<<<<<< HEAD
 int prompting(int ac, char **argv);
 int _larger(void);
-=======
 void print_env(void);
 
->>>>>>> 082ed29901366b17e1c00d4e40c08cd03e14ac62
+/*My second prototypes*/
+void can_display(void);
+void handle_inputs(char *incmd, size_t size);
+void shell_print(const char *Inputs);
+void execution(const char *incmd);
+void arguments_exec(const char *incmd);
+/*End of the prototypes*/
 #endif 
