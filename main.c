@@ -11,8 +11,13 @@ int main()
 	{
 		can_display();
 		handle_inputs(incmd, sizeof(incmd));
-		execution(incmd);
-		arguments_exec(incmd);
+		if (strcmp(incmd, "env") == 0)
+		{
+			_environ();
+                } else {
+			execution(incmd);
+			arguments_exec(incmd);
+		}
         }
 	return (0);
 }

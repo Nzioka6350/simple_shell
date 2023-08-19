@@ -26,5 +26,6 @@ void handle_inputs(char *incmd, size_t size);
 void shell_print(const char *Inputs);
 void execution(const char *incmd);
 void arguments_exec(const char *incmd);
+void _environ();
 /*End of the prototypes*/
 #endif 
