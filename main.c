@@ -11,7 +11,11 @@ int main()
 	{
 		can_display();
 		handle_inputs(incmd, sizeof(incmd));
-		if (strcmp(incmd, "env") == 0)
+		if(strcmp(incmd, "exit") ==0)
+		{
+			buldin_exiting();
+		}
+		else if (strcmp(incmd, "env") == 0)
 		{
 			_environ();
                 } else {

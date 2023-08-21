@@ -1,5 +1,10 @@
 #include "shell.h"
-
+/*
+ *
+ *
+ *
+ *
+ */
 void execution(const char *incmd)
 {
 		pid_t toto_pid = fork();

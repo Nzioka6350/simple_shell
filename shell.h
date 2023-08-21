@@ -27,5 +27,6 @@ void shell_print(const char *Inputs);
 void execution(const char *incmd);
 void arguments_exec(const char *incmd);
 void _environ();
+void buldin_exiting(void);
 /*End of the prototypes*/
 #endif 
