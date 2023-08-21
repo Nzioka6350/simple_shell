@@ -7,6 +7,6 @@
  */
 void buldin_exiting(void)
 {
-	printf("Exiting the shell...\n");
+	printf("Shell terminating...\n");
 	exit(0);
 }
