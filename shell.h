@@ -11,7 +11,7 @@
 #include <stddef.h>
 
 /*Buffer sizes are here*/
-#define BUFFER_SIZE 700
+#define BUFF_SIZE 700
 
 /*End of the size declaration make sure you place all of then in-between*/
 

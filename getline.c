@@ -1,7 +1,12 @@
 #include "shell.h"
-
+/*
+ *
+ *
+ *
+ *
+ */
 char *ourOwn_shellgetline(void) {
-    static char buffer[BUFFER_SIZE];
+    static char bufbuf[BUFF_SIZE];
     static int placed = 0;
     static int cmdbytes = 0;
 
@@ -11,7 +16,7 @@ char *ourOwn_shellgetline(void) {
 
     while (1) {
         if (placed == cmdbytes) {
-            cmdbytes = read(STDIN_FILENO, buffer, BUFFER_SIZE);
+            cmdbytes = read(STDIN_FILENO, bufbuf, BUFF_SIZE);
             if (cmdbytes <= 0) {
                 if (length_l == 0) {
                     return NULL;
@@ -22,16 +27,16 @@ char *ourOwn_shellgetline(void) {
             placed = 0;
         }
 
-        placeChar = buffer[placed++];
+        placeChar = bufbuf[placed++];
 
         if (placeChar == '\n' || placeChar == EOF) {
             break;
         }
 
         if (length_l == 0) {
-            lineptr = (char *)malloc(BUFFER_SIZE);
-        } else if (length_l % BUFFER_SIZE == 0) {
-            lineptr = (char *)realloc(lineptr, length_l + BUFFER_SIZE);
+            lineptr = (char *)malloc(BUFF_SIZE);
+        } else if (length_l % BUFF_SIZE == 0) {
+            lineptr = (char *)realloc(lineptr, length_l + BUFF_SIZE);
         }
 
         lineptr[length_l++] = placeChar;
@@ -44,7 +49,7 @@ char *ourOwn_shellgetline(void) {
         return NULL;
     }
 
-    if (length_l % BUFFER_SIZE == 0) {
+    if (length_l % BUFF_SIZE == 0) {
         lineptr = (char *)realloc(lineptr, length_l + 1);
     }
 
