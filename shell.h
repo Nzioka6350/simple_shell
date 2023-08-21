@@ -10,9 +10,10 @@
 #include <sys/stat.h>
 #include <stddef.h>
 
-#define MAX_TOKENS 100
-#define PATH_MAX_LENGTH 1024
-#define INPUT_LENGTH 100
+/*Buffer sizes are here*/
+#define BUFFER_SIZE 700
+
+/*End of the size declaration make sure you place all of then in-between*/
 
 char *get_location(char *command);
 int exiting(int ac, char **argv);
@@ -28,5 +29,6 @@ void execution(const char *incmd);
 void arguments_exec(const char *incmd);
 void _environ();
 void buldin_exiting(void);
+char *ourOwn_shellgetline(void);
 /*End of the prototypes*/
 #endif 
