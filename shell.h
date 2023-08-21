@@ -12,6 +12,7 @@
 
 /*Buffer sizes are here*/
 #define BUFF_SIZE 700
+#define MAX_COMMAND_LENGTH 100
 
 /*End of the size declaration make sure you place all of then in-between*/
 
@@ -30,5 +31,6 @@ void arguments_exec(const char *incmd);
 void _environ();
 void buldin_exiting(void);
 char *ourOwn_shellgetline(void);
+void tokenize_cmd(char *cmdin, char *incmd, char *args);
 /*End of the prototypes*/
 #endif 
