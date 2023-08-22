@@ -20,6 +20,7 @@ int main(void)
 			if (strcmp(incmd, "exit") == 0)
 			{
 				buldin_exiting();
+				shell_print("Shell is terminating");
 			}
 			else if (strcmp(incmd, "env") == 0)
 			{
