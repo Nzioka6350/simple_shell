@@ -6,5 +6,5 @@
  */
 void can_display(void)
 {
-	shell_print("#chasbeenAwesome $");
+	shell_print("#Cisfun$");
 }
