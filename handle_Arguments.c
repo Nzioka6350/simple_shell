@@ -1,4 +1,11 @@
 #include "shell.h"
+/**
+ * arguments_exec -function that handles the arguments.
+ *
+ * incmd - command typed.
+ *
+ * Return: Always 0.
+ */
 
 void arguments_exec(const char *incmd)
 {

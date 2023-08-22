@@ -1,6 +1,6 @@
 #include "shell.h"
 /**
- * main - Is a function that prints the prompt.
+ * can_display - Is a function that prints the prompt.
  *
  * Return: Always 0.
  */
