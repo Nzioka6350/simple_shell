@@ -6,7 +6,7 @@
  * Return: Always returs 0.
  */
 
-int main1(void)
+int main(void)
 {
 	int j, k;
 
