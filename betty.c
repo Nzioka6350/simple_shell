@@ -6,7 +6,7 @@
  * Return: Always returs 0.
  */
 
-int _larger(void)
+int main(void)
 {
 	int j, k;
 
