@@ -38,5 +38,6 @@ void unsetenv_command(char *variable);
 char *ourOwn_shellgetline(void);
 void tokenize_cmd(char *cmdin, char *incmd, char *args);
 /* End of the prototypes */
-
+void execmd(char **argv);
+char *get_location(char *command);
 #endif
