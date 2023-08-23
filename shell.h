@@ -32,11 +32,11 @@ void handle_inputs(char *incmd, size_t size);
 void shell_print(const char *Inputs);
 void execution(const char *incmd);
 void arguments_exec(const char *incmd);
-void _environ();
+void _environ(void);
 void buldin_exiting(void);
 void setenv_command(char *variable, char *value);
 void unsetenv_command(char *variable);
 char *ourOwn_shellgetline(void);
 void tokenize_cmd(char *cmdin, char *incmd, char *args);
 /*End of the prototypes*/
-#endif 
+#endif
