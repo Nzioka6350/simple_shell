@@ -1,12 +1,12 @@
 #include <stdio.h>
 
 /**
- * main - check which number is the greatest
+ * betty - check which number is the greatest
  *
  * Return: Always returs 0.
  */
 
-int main(void)
+int betty(void)
 {
 	int j, k;
 
