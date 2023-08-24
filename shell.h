@@ -179,8 +179,8 @@ int changedir(info_t *);
 int tohlp(info_t *);
 
 /* toem_builtin1.c */
-int _myhistory(info_t *);
-int _myalias(info_t *);
+int hist_y(info_t *);
+int nicknames(info_t *);
 
 /*toem_getline.c */
 ssize_t get_input(info_t *);
