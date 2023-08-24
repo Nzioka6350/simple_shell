@@ -4,6 +4,14 @@
  * handle_builtin - Handle Builtin Command
  * @cmd: Parsed Command
  * @er:statue of last Excute
+ * This function handles built-in shell commands
+ * by comparing the given command
+ * with a list of recognized built-in commands.
+ * If a match is found, the
+ * corresponding built-in function is executed.
+ *
+ * @cmd: The parsed command and its arguments.
+ * @er: The status of the last executed command.
  * Return: -1 Fail 0 Succes (Return :Excute Builtin)
  */
 
@@ -36,6 +44,17 @@ int handle_builtin(char **cmd, int er)
  * @input: User Input
  * @c:Shell Excution Time Case of Command Not Found
  * @argv:Program Name
+ * This function handles the execution of
+ * non-built-in shell commands. It forks
+ * a new process and attempts to execute the given command.
+ * If the command is
+ * not found, an error message is printed and the function returns -1.
+ *
+ * @cmd: The parsed command and its arguments.
+ * @input: The original user input.
+ * @c: The shell execution count.
+ * @argv: The program name.
+ *
  * Return: 1 Case Command Null -1 Wrong Command 0 Command Excuted
  */
 int check_cmd(char **cmd, char *input, int c, char **argv)
@@ -77,6 +96,13 @@ int check_cmd(char **cmd, char *input, int c, char **argv)
 /**
  * signal_to_handel - Handle ^C
  * @sig:Captured Signal
+ * This function is a signal handler specifically for the
+ * SIGINT signal (usually
+ * generated when the user presses Ctrl+C)
+ * It's responsible for printing a new
+ * shell prompt after the signal is captured.
+ *
+ * @sig: The captured signal
  * Return: Void
  */
 void signal_to_handel(int sig)
