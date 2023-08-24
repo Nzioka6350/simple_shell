@@ -40,4 +40,22 @@ void tokenize_cmd(char *cmdin, char *incmd, char *args);
 /* End of the prototypes */
 void execmd(char **argv);
 char *get_location(char *command);
+
+
+
+/*online search*/
+#include <string.h>
+int main(void);
+void cd_write(const char *str);
+void custom_shell(void);
+void execute_command(char *command);
+
+#define MAX_ARGS 50
+void custom_shell();
+void handle_arguments(char *args[]);
+char *get_command_path(char *command);
+int _shell(char c);
+
+
+#define BUFSIZE 1024
 #endif
