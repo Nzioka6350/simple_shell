@@ -3,7 +3,9 @@
 /**
  * _putchar - writes the character c to stdout
  * @c: The character to print
- *
+ * This function is responsible for printing a single
+ * character to the standard output.
+ * It writes the character 'c' to the standard output
  * Return: On success 1.
  * On error, -1 is returned, and errno is set appropriately.
  */
@@ -14,8 +16,13 @@ int _putchar(char c)
 /**
  * _strncpy - copie a string
  * @dest:char
- *  @src:char
+ * @src:char
  * @n:int
+ * This function copies up to 'n' characters from
+ * the source string 'src' to the destination
+ * string 'dest'. If the length of 'src' is
+ * less than 'n', the remainder of 'dest' is filled with '\0'.
+ *
  * Return:char
  */
 
@@ -40,6 +47,7 @@ i = 0;
 /**
  * _strlen - lenght of string
  * @s:char
+ * This function calculates the length of a null-terminated string 's'.
  * Return:int
  */
 
@@ -57,6 +65,8 @@ return (i);
 /**
  * _atoi - convert to a int
  * @s:string
+ * This function converts a string 's' representing
+ * an integer into an actual integer value.
  * Return:int
  */
 int _atoi(char *s)
@@ -82,6 +92,8 @@ int i, j, n, x;
 /**
  * _puts - print a string
  * @str:pointer char
+ * This function prints a null-terminated
+ * string followed by a newline character.
  * return:void
  */
 void _puts(char *str)
