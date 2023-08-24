@@ -1,6 +1,6 @@
 #include "shell.h"
 /**
- * exit - Terminate the shell or set a custom exit status.
+ * _myexit - Terminate the shell or set a custom exit status.
  * @info: Pointer to a structure containing potential arguments.
  *
  * This function is used to exit the shell or set a custom exit status.
@@ -14,7 +14,7 @@
  *
  * Return: None. The function exits the shell process if necessary.
  */
-int exit(info_t *info)
+int _myexit(info_t *info)
 {
 	int if_exit;
 

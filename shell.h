@@ -174,7 +174,7 @@ char *num_cov(long int, int, int);
 void rm_comm(char *);
 
 /* toem_builtin.c */
-int exit(info_t *);
+int _myexit(info_t *);
 int changedir(info_t *);
 int tohlp(info_t *);
 
