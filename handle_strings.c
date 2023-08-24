@@ -4,6 +4,11 @@
  * _strcmp - Compare Two String
  * @s1:String 1
  * @s2:String 2
+ * This function compares two strings character by character.
+ * It returns 0 if
+ * the strings are identical and a non-zero value
+ * indicating the difference if
+ * they are not identical.
  * Return: 0 If Identical Otherwise How Much Diffrent
  */
 int _strcmp(char *s1, char *s2)
@@ -30,7 +35,8 @@ len2 = _strlen(s2);
 }
 /**
  * _isalpha - Check if Alphabtic
- *@c: Character
+ *@c: Characteric
+ * This function checks if the given character is alphabetic
  * Return: 1 If True 0 If Not
  */
 int _isalpha(int c)
@@ -47,6 +53,7 @@ return (0);
 /**
  * _itoa - Convert Integer To Char
  * @n: Int To Convert
+ * This function converts an integer to its string representation
  * Return: Char Pointer
  */
 char *_itoa(unsigned int n)
@@ -74,6 +81,8 @@ char *_itoa(unsigned int n)
  *  array_rev - Reverse Array
  * @arr:Array To Reverse
  * @len:Length Of Array
+ * This function calculates the number of digits in the given integer.
+ *
  * Return: Void(Reverse Array)
  */
 void array_rev(char *arr, int len)
