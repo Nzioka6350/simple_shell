@@ -3,7 +3,14 @@
 /**
  * parse_cmd - Parse Line Of Input
  * @input:User Input To Parse
- * Return: Array Of Char (Parsed):Simple Shell
+ * This function takes a line of user input and
+ * tokenizes it into an array of strings.
+ * It uses whitespace and newline characters as
+ * delimiters to separate the input into tokens.
+ * The tokens are stored in dynamically allocated
+ * memory and returned as an array of strings.
+ *
+ * Return: Array Of strings (token):Simple Shell
  */
 char **parse_cmd(char *input)
 {
