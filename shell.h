@@ -167,11 +167,11 @@ int _isalpha(int);
 int _atoi(char *);
 
 /* toem_errors1.c */
-int _erratoi(char *);
-void print_error(info_t *, char *);
-int print_d(int, int);
-char *convert_number(long int, int, int);
-void remove_comments(char *);
+int handle_errors(char *);
+void err_ptr(info_t *, char *);
+int dprint(int, int);
+char *num_cov(long int, int, int);
+void rm_comm(char *);
 
 /* toem_builtin.c */
 int exit(info_t *);

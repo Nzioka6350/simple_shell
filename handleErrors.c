@@ -4,8 +4,9 @@
  * @str: The string to be printed.
  *
  * This function is used to print a given string to the standard error stream.
- * The provided @str parameter represents the string to be printed. The function
- * doesn't return a specific value; it simply outputs the string to the error stream.
+ * The provided @str parameter represents the string to be printed.
+ * The function doesn't return a specific value;
+ * it simply outputs the string to the error stream.
  *
  * Return: Nothing.
  */
@@ -25,9 +26,11 @@ void Inputs(char *str)
  * _eputchar - Write a character to the standard error stream.
  * @c: The character to be printed.
  *
- * This function is used to write a specified character to the standard error
- * stream. The provided @c parameter represents the character to be printed.
- * On success, the function returns 1. On error, -1 is returned, and the `errno`
+ * This function is used to write a specified character to
+ * the standard error stream.
+ * The provided @c parameter represents the character to be printed.
+ * On success, the function returns 1.
+ * On error, -1 is returned, and the `errno`
  * variable is set appropriately to indicate the specific error.
  *
  * Return: On success, 1. On error, -1 is returned, and `errno` is set.
@@ -51,10 +54,12 @@ int put_char(char c)
  * @c: The character to be written.
  * @fd: The file descriptor to write to.
  *
- * This function is used to write a specified character to the given file
- * descriptor. The provided @c parameter represents the character to be written,
- * and the @fd parameter specifies the file descriptor to write to. On success,
- * the function returns 1. On error, -1 is returned, and the `errno` variable is
+ * This function is used to write a specified character to
+ * the given file descriptor.
+ * The provided @c parameter represents the character to be written,
+ * and the @fd parameter specifies the file descriptor to write to.
+ * On success,the function returns 1.
+ * On error, -1 is returned, and the `errno` variable is
  * set appropriately to indicate the specific error.
  *
  * Return: On success, 1. On error, -1 is returned, and `errno` is set.
@@ -80,8 +85,9 @@ int ftputs(char c, int fd)
  *
  * This function is used to write a given string to the specified file
  * descriptor. The provided @str parameter represents the string to be written,
- * and the @fd parameter specifies the file descriptor to write to. The function
- * returns the number of characters successfully written to the file descriptor.
+ * and the @fd parameter specifies the file descriptor to write to.
+ * The function returns the number of characters successfully written to
+ * the file descriptor.
  *
  * Return: The number of characters written on success.
  *         On error, -1 is returned, and `errno` is set appropriately.
