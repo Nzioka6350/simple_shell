@@ -111,6 +111,7 @@ typedef struct builtin
 } builtin_table;
 
 
+char *_strchr(const char *s, int c);
 /* toem_shloop.c */
 int hsh(info_t *, char **);
 int find_builtin(info_t *);
