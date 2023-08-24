@@ -1,8 +1,11 @@
 #include "shell.h"
+
 /**
  * _strcpy - Copie Source To Destination Char
  * @dest:Destination
  * @src:Source
+ * This function copies the characters
+ * from the source string to the destination string.
  * Return: Copie Of Char *
  */
 char *_strcpy(char *dest, char *src)
@@ -18,10 +21,13 @@ i = 0;
 dest[i] = '\0';
 return (dest);
 }
+
 /**
  * _strcat - Concat Two String
  * @dest:First String
  * @src:Second String
+ * This function appends the characters
+ * of the source string to the end of the destination string.
  * Return:First String + Second String Char *
  */
 char *_strcat(char *dest, char *src)
@@ -42,10 +48,13 @@ char *_strcat(char *dest, char *src)
 	*dest = '\0';
 	return (s);
 }
+
 /**
  * _strchr - Locate Charactere In String
  * @s:String Search In
  * @c:Char To Search For
+ * This function searches for the first
+ * occurrence of a specified character in a string.
  * Return: Pointer To Char*
  */
 char *_strchr(char *s, char c)
@@ -61,12 +70,13 @@ char *_strchr(char *s, char c)
 
 return (s);
 }
+
 /**
  * _strncmp - Compare Amount (n) Of Characters Of Two Strings.
  * @s1: A String.
  * @s2: A String.
  * @n: Amount Of Characters To Compare.
- *
+ * This function compares a specified number of characters from two strings
  * Return: 1 If The Strings Don't Match Otherwise 0
  */
 int _strncmp(const char *s1, const char *s2, size_t n)
@@ -84,9 +94,12 @@ int _strncmp(const char *s1, const char *s2, size_t n)
 	}
 	return (0);
 }
+
 /**
  * _strdup - Duplicate A String
  * @str:String
+ * This function duplicates a given string by
+ * allocating memory for a new string and copying the characters.
  * Return: Duplicate String Failed Null
  */
 char *_strdup(char *str)
