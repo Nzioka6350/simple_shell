@@ -1,7 +1,10 @@
 #include "shell.h"
+
 /**
  * history - Fill File By User Input
  * @input: User Input
+ * This function appends the user input to
+ * a history file for tracking command history
  * Return: -1 Fail 0 Succes
  */
 int history(char *input)
@@ -28,6 +31,8 @@ int history(char *input)
 /**
  * free_env - Free Enviroment Variable Array
  * @env:  Environment variables.
+ * This function frees the memory allocated
+ * for the array of environment variables.
  * Return: Void
  */
 void free_env(char **env)
