@@ -40,6 +40,4 @@ void tokenize_cmd(char *cmdin, char *incmd, char *args);
 /* End of the prototypes */
 void execmd(char **argv);
 char *get_location(char *command);
-int _isalpha(int c);
-int _atoi(char *s);
 #endif
