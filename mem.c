@@ -4,6 +4,10 @@
  * history_dis - Display History Of User Input Simple Shell
  * @c:Parsed Command
  * @s:Statue Of Last Excute
+ * This function displays the history of user inputs
+ * stored in the ".simple_shell_history" file.
+ * It reads the file line by line and prefixes
+ * each line with a counter and then prints it.
  * Return: 0 Succes -1 Fail
  */
 int history_dis(__attribute__((unused))char **c, __attribute__((unused))int s)
@@ -38,6 +42,9 @@ int history_dis(__attribute__((unused))char **c, __attribute__((unused))int s)
 /**
  * print_echo - Excute Normal Echo
  * @cmd: Parsed Command
+ * This function executes the "echo" command using fork and execve.
+ * It creates a child process to execute the
+ * command and waits for its completion.
  * Return: 0 Succes -1 Fail
  */
 int print_echo(char **cmd)
