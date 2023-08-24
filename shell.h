@@ -143,10 +143,10 @@ char *_strdup(const char *);
 void _puts(char *);
 int _putchar(char);
 
-/* toem_exits.c */
+/*exits.c */
 char *_strncpy(char *, char *, int);
 char *_strncat(char *, char *, int);
-char *_strchr(char *, char);
+char *_find_chr(char *, char);
 
 /* toem_tokenizer.c */
 char **strtow(char *, char *);
@@ -192,7 +192,7 @@ void clear_info(info_t *);
 void set_info(info_t *, char **);
 void free_info(info_t *, int);
 
-/*.environment.c */
+/*environment.c */
 char *_getenv(info_t *, const char *);
 int _ourenv(info_t *);
 int _oursetenv(info_t *);
