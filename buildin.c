@@ -1,10 +1,14 @@
 #include "shell.h"
+
 /**
  * exit_bul - Exit Statue Shell
  * @cmd: Parsed Command
  * @input: User Input
  * @argv:Program Name
  * @c:Excute Count
+ * This function handles the built-in command "exit" for the shell program.
+ * It allows the user to exit the shell with a specific exit status
+ * or the default status if no exit status is provided.
  * Return: Void (Exit Statue)
  */
 void  exit_bul(char **cmd, char *input, char **argv, int c)
@@ -39,7 +43,10 @@ void  exit_bul(char **cmd, char *input, char **argv, int c)
  * change_dir - Change Dirctorie
  * @cmd: Parsed Command
  * @er: Statue Last Command Excuted
- * Return: 0 Succes 1 Failed (For Old Pwd Always 0 Case No Old PWD)
+ * This function handles the built-in command change
+ * directory for the shell program.
+ * It allows the user to change the current working directory.
+ * Return: 0 Succes 1 Failed
  */
 int change_dir(char **cmd, __attribute__((unused))int er)
 {
@@ -72,6 +79,8 @@ int change_dir(char **cmd, __attribute__((unused))int er)
  * dis_env - Display Enviroment Variable
  * @cmd:Parsed Command
  * @er:Statue of Last command Excuted
+ * This function handles the built-in command "env"
+ * to display environment variables for the shell program.
  * Return:Always 0
  */
 int dis_env(__attribute__((unused)) char **cmd, __attribute__((unused)) int er)
@@ -91,6 +100,8 @@ size_t i;
  * display_help - Displaying Help For Builtin
  * @cmd:Parsed Command
  * @er: Statue Of Last Command Excuted
+ * This function displays the content of a specified
+ * file for the shell program.
  * Return: 0 Succes -1 Fail
  */
 int display_help(char **cmd, __attribute__((unused))int er)
@@ -120,6 +131,10 @@ int display_help(char **cmd, __attribute__((unused))int er)
  * echo_bul - Excute Echo Cases
  * @st:Statue Of Last Command Excuted
  * @cmd: Parsed Command
+ * This function handles the built-in command "echo" for the shell program.
+ * It prints text to the standard output.
+ * It also has special handling for printing the exit status,
+ * process ID, and PATH environment variable.
  * Return: Always 0 Or Excute Normal Echo
  */
 int echo_bul(char **cmd, int st)
