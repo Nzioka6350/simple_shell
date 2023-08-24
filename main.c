@@ -1,10 +1,19 @@
 #include "shell.h"
 
 /**
- * main - entry point
- * @ac: arg count
- * @av: arg vector
- * Return: 0 on success, 1 on error
+ * main - Entry point for the simple shell program.
+ * @ac: Argument count (unused)
+ * @av: Argument vector (unused)
+ *
+ * This function serves as the entry point for the simple shell program.
+ * It initializes the shell information, handles file redirection if given,
+ * populates the environment list, reads shell history from a file, and enters
+ * the shell loop for command execution.
+ *
+ * @ac: The argument count (unused).
+ * @av: The argument vector (unused).
+ *
+ * Return: 0 on successful execution, 1 on error.
  */
 int main(int ac, char **av)
 {
