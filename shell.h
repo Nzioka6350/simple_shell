@@ -182,9 +182,11 @@ int tohlp(info_t *);
 int hist_y(info_t *);
 int nicknames(info_t *);
 
-/*toem_getline.c */
+/*getline.c */
+ssize_t input_buf(info_t *, char **, size_t *);
 ssize_t get_input(info_t *);
 int _getline(info_t *, char **, size_t *);
+ssize_t read_buf(info_t *, char *, size_t *);
 void sigintHandler(int);
 
 /* toem_getinfo.c */
