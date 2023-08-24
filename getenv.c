@@ -28,13 +28,15 @@ char **get_environ(info_t *info)
  * @info: Pointer to a structure containing potential arguments.
  * @var: The string representing the environment variable to remove.
  *
- * This function is used to remove an environment variable from the environment.
- * The provided @info parameter is used to maintain a consistent function prototype.
- * The @var parameter specifies the string representing the environment variable
- * to be removed.
- *
- * If the removal is successful, the function returns 1. If the specified environment
- * variable doesn't exist or an error occurs during removal, the function returns 0.
+ * This function is used to remove an environment variable
+ * from the environment.
+ * The provided @info parameter is used to maintain a
+ * consistent function prototype.
+ * The @var parameter specifies the string
+ * representing the environment variable to be removed.
+ * If the removal is successful, the function returns 1.
+ * f the specified environment variable doesn't exist
+ * or an error occurs during removal, the function returns 0.
  *
  * Return: 1 on successful removal, 0 otherwise.
  */
@@ -68,14 +70,17 @@ int _unsetenv(info_t *info, char *var)
  * @var: The string representing the environment variable property.
  * @value: The string representing the environment variable value.
  *
- * This function is used to initialize a new environment variable or modify an
- * existing one. The provided @info parameter is used to maintain a consistent
- * function prototype. The @var parameter specifies the string representing the
- * environment variable property to be set or modified, and the @value parameter
- * specifies the value to assign to the environment variable.
+ * This function is used to initialize a new environment variable or
+ * modify an existing one.
+ * The provided @info parameter is used to maintain a consistent
+ * function prototype.
+ * The @var parameter specifies the string representing the
+ * environment variable property to be set or modified,
+ * and the @value parameter specifies the value
+ * to assign to the environment variable.
  *
- * The function doesn't modify the environment or the input parameters. It returns
- * 0 to indicate successful completion.
+ * The function doesn't modify the environment or the input parameters.
+ * It returns 0 to indicate successful completion.
  *
  * Return: Always 0.
  */
