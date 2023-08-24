@@ -3,6 +3,8 @@
  * check_delim - Checks If A Character Match Any Char *
  * @c: Character To Check
  * @str: String To Check
+ * This function checks if a character 'c' matches
+ * any character in the string
  * Return: 1 Succes, 0 Failed
  */
 unsigned int check_delim(char c, const char *str)
@@ -21,6 +23,8 @@ unsigned int check_delim(char c, const char *str)
  * _strtok - Token A String Into Token (strtrok)
  * @str: String
  * @delim: Delimiter
+ * This function tokenizes a string into
+ * tokens using the specified delimiter characters
  * Return: Pointer To The Next Token Or NULL
  */
 char *_strtok(char *str, const char *delim)
